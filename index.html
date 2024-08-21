@@ -3,41 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather Project</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Miami</h1>
-        <p>
-          Monday 22:17, clear sky
-          <br />
-          Humidity: 89%, Wind: 2.06km/h
-        </p>
-      </div>
-      <div>🌧️75°</div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/DinaraMiller" target="_blank"
-        >Dinara Miller</a
-      >
-      and is
-      <a
-        href="https://github.com/DinaraMiller/my-weather-project"
-        target="_blank"
-        >open-sourced on Github</a
-      >
-      and
-      <a href="https://weather-project-by-dinara.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+    <div class="my-weather-app">
+      <header>
+        <form>
+          <input
+            class="search-city-input"
+            type="search"
+            placeholder="Enter a city.."
+            required
+          />
+          <input class="search-city-button" type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-data-app">
+          <div>
+            <h1 class="weather-city">Miami</h1>
+            <p class="weather-details">
+              Monday 22:17, clear sky
+              <br />
+              Humidity: <strong>89%</strong>, Wind: <strong>2.06km/h</strong>
+            </p>
+          </div>
+          <div class="currrent-temperature-container">
+            <div class="icon">🌧️</div>
+            <div class="current-temperature">75</div>
+            <div class="unit">°</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/DinaraMiller" target="_blank"
+          >Dinara Miller</a
+        >
+        and is
+        <a
+          href="https://github.com/DinaraMiller/my-weather-project"
+          target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="https://weather-project-by-dinara.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
