@@ -63,8 +63,8 @@ main {
   display: flex;
 }
 .icon {
-  margin-top: 20px;
-  font-size: 40px;
+  width: 88px;
+  height: 88px;
 }
 .current-temperature {
   font-size: 70px;
