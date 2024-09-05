@@ -53,7 +53,33 @@ function weatherInCity(event) {
   searchCityTemp(searchCityElement.value);
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="weather-forecast-daily">
+   <div class="weather-forecast-day">${day}</div>
+   <div class="weather-forecast-icon">🌧️</div>
+   <div class="weather-forecast-temperatures">
+     <div vlass="weather-forecast-temperature">
+       <strong>24°</strong>
+     </div>
+     <div class="weather-forecast-temperature">17°</div>
+   </div>
+ </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", weatherInCity);
 
 searchCityTemp("Denver");
+
+displayForecast();
