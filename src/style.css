@@ -34,9 +34,9 @@ a {
   border-radius: 6px;
   padding: 15px;
   width: 100px;
-  color: white;
+  color: #f1f0e8;
   font-size: 16px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 main {
@@ -48,6 +48,7 @@ main {
   justify-content: space-between;
 }
 .weather-city {
+  color: rgb(73, 72, 72);
   margin: 0;
   font-size: 38px;
   line-height: 48px;
@@ -69,6 +70,7 @@ main {
   height: 88px;
 }
 .current-temperature {
+  color: rgb(73, 72, 72);
   font-size: 70px;
   font-weight: bold;
   margin-left: 10px;
